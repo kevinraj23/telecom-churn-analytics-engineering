@@ -14,7 +14,7 @@
 
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-username-telecom-churn-analytics-engineering.streamlit.app)
 
-> *(Replace the link above with your actual Streamlit Cloud URL after deployment)*
+> *https://telecom-churn-analytics-engineering-gjr4f9phdsezqhi2shw96c.streamlit.app/*
 
 ---
 
