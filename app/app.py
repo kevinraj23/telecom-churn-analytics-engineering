@@ -31,19 +31,19 @@ def load_data():
 df = load_data()
 
 # ── Sidebar navigation ────────────────────────────────────────────────────────
-st.sidebar.title("📡 Telco Churn Risk")
+st.sidebar.title("Telco Churn Risk")
 page = st.sidebar.radio("Navigate", [
-    "📊 Overview & Insights",
-    "🔮 Single Customer Predict",
-    "💰 Revenue at Risk",
-    "🤖 Model Info"
+    " Overview & Insights",
+    " Single Customer Predict",
+    " Revenue at Risk",
+    " Model Info"
 ])
 
 # ═════════════════════════════════════════════════════════════════════════════
 # PAGE 1 — Overview & Insights
 # ═════════════════════════════════════════════════════════════════════════════
-if page == "📊 Overview & Insights":
-    st.title("📡 Telco Churn Risk Dashboard")
+if page == " Overview & Insights":
+    st.title(" Telco Churn Risk Dashboard")
     st.markdown("*End-to-end churn analysis combining SQL-like aggregations with ML models*")
     st.divider()
 
@@ -105,8 +105,8 @@ if page == "📊 Overview & Insights":
 # ═════════════════════════════════════════════════════════════════════════════
 # PAGE 2 — Single Customer Predict
 # ═════════════════════════════════════════════════════════════════════════════
-elif page == "🔮 Single Customer Predict":
-    st.title("🔮 Single Customer Churn Prediction")
+elif page == " Single Customer Predict":
+    st.title(" Single Customer Churn Prediction")
     st.markdown("Enter customer details to get an instant churn risk score.")
     st.divider()
 
@@ -145,17 +145,17 @@ elif page == "🔮 Single Customer Predict":
         st.metric("Churn Probability", f"{prob}%")
 
         if prob >= 70:
-            st.error("⚠️ Immediate action recommended — offer retention discount or contract upgrade.")
+            st.error(" Immediate action recommended — offer retention discount or contract upgrade.")
         elif prob >= 40:
-            st.warning("📋 Monitor this customer — consider a loyalty reward.")
+            st.warning(" Monitor this customer — consider a loyalty reward.")
         else:
-            st.success("✅ Low risk — customer likely to stay.")
+            st.success(" Low risk — customer likely to stay.")
 
 # ═════════════════════════════════════════════════════════════════════════════
 # PAGE 3 — Revenue at Risk
 # ═════════════════════════════════════════════════════════════════════════════
 elif page == "💰 Revenue at Risk":
-    st.title("💰 Revenue at Risk by Segment")
+    st.title("Revenue at Risk by Segment")
     st.markdown("*SQL-style aggregation: Contract × Internet Service × Tenure Bucket*")
     st.divider()
 
@@ -196,18 +196,18 @@ elif page == "💰 Revenue at Risk":
     st.metric("Total Monthly Revenue at Risk (filtered)", f"${total_risk:,.2f}")
 
     csv = revenue_risk.to_csv(index=False)
-    st.download_button("📥 Download CSV", csv, "revenue_at_risk.csv", "text/csv")
+    st.download_button(" Download CSV", csv, "revenue_at_risk.csv", "text/csv")
 
 # ═════════════════════════════════════════════════════════════════════════════
 # PAGE 4 — Model Info
 # ═════════════════════════════════════════════════════════════════════════════
-elif page == "🤖 Model Info":
-    st.title("🤖 Model Information")
+elif page == " Model Info":
+    st.title(" Model Information")
     st.divider()
 
     st.subheader("Model Comparison")
     metrics = pd.DataFrame({
-        'Model': ['Logistic Regression ✅ (chosen)', 'Random Forest'],
+        'Model': ['Logistic Regression  (chosen)', 'Random Forest'],
         'Accuracy':  [0.7246, 0.7665],
         'Precision': [0.4888, 0.5728],
         'Recall':    [0.8182, 0.4733],
@@ -232,7 +232,7 @@ elif page == "🤖 Model Info":
     - Class imbalance handled via `class_weight='balanced'`
     """)
 
-    st.subheader("🗺️ Roadmap")
+    st.subheader(" Roadmap")
     st.markdown("""
     - [ ] Add PostgreSQL backend for real-time customer scoring
     - [ ] Add batch scoring API with FastAPI
