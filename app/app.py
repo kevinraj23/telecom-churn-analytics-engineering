@@ -154,7 +154,7 @@ elif page == " Single Customer Predict":
 # ═════════════════════════════════════════════════════════════════════════════
 # PAGE 3 — Revenue at Risk
 # ═════════════════════════════════════════════════════════════════════════════
-elif page == "Revenue at Risk":
+elif page == " Revenue at Risk":
     st.title("Revenue at Risk by Segment")
     st.markdown("*SQL-style aggregation: Contract × Internet Service × Tenure Bucket*")
     st.divider()
