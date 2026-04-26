@@ -6,7 +6,7 @@
 ![Status](https://img.shields.io/badge/Status-Open%20to%20Internships-brightgreen?style=flat)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=flat)
 
-> **End-to-end churn analysis combining SQL-like aggregations in pandas with ML models to estimate revenue at risk — built by an ECE + Data Science student focused on system reliability and business impact.**
+> **End-to-end churn analysis combining SQL-like aggregations in pandas with ML models to estimate revenue at risk — built by an ECS + Data Science student focused on system reliability and business impact.**
 
 ---
 
@@ -66,7 +66,7 @@ Using SQL-style `groupby` aggregations in pandas and two ML models (Logistic Reg
 | joblib | Model serialization |
 | matplotlib / seaborn | Visualizations |
 
-> Designed by an **ECE + Data Science student** with focus on system reliability, lightweight deployment, and engineering-grade code structure.
+> Designed by an **ECS + Data Science student** with focus on system reliability, lightweight deployment, and engineering-grade code structure.
 
 ---
 
@@ -152,7 +152,7 @@ MIT License — see [LICENSE](LICENSE) for details.
 
 ## 🙋 About
 
-Built by a final-year **ECE + Data Science** student as a portfolio project demonstrating the intersection of engineering thinking and data science.  
+Built by a final-year **ECS + Data Science** student as a portfolio project demonstrating the intersection of engineering thinking and data science.  
 Open to **internship and collaboration** opportunities.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://linkedin.com/in/your-profile)
